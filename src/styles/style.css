@@ -1,0 +1,125 @@
+:root {
+  --main-color: coral;
+  --secondary-color: #eaeaea;
+}
+
+body {
+  background: #eeeeee;
+}
+
+.header {
+  background: #e5e5e5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.main-list {
+  width: 90%;
+  margin: 168px auto auto;
+}
+
+.header-content {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nav-item {
+  float: left;
+  width: 30%;
+  cursor: pointer;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 18px;
+  transition: width 0.2s ease;
+}
+
+.nav-item.active {
+  color: var(--main-color);
+  padding: 10px 0 7px 0;
+  width: 40%;
+  border-bottom: 5px solid var(--main-color);
+}
+
+
+.input-component {
+  margin: 10px 0;
+  position: relative;
+}
+
+.input-component input {
+  width: 99%;
+  padding-left: 1%;
+  height: 40px;
+  background: transparent;
+  border: 0;
+  box-shadow: 0 0 2px var(--main-color);
+}
+
+.input-component input:focus {
+  box-shadow: 0 0 2px var(--main-color);
+}
+
+.input-component .icon-label {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.todo-list {
+  margin: 10px 0;
+  background: #eaeaea;
+}
+
+.todo-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 0 2px var(--main-color);
+}
+
+.todo-list li:hover {
+  box-shadow: 0 0 5px var(--main-color);
+}
+
+.todo-list li a {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.check-todo {
+  color: white;
+}
+
+.check-todo i {
+  text-shadow: -1px 0 var(--main-color), 0 1px var(--main-color), 1px 0 var(--main-color), 0 -1px var(--main-color);
+
+}
+
+.check-todo.btn-completed {
+  color: var(--main-color);
+}
+
+.list-item span {
+  padding: 4px 10px 4px 4px;
+  word-break: break-all;
+  cursor: text;
+}
+
+.list-item span.completed {
+  text-decoration: line-through;
+}
+
+.remove-todo {
+  float: right;
+  color: #dc3545;
+}
