@@ -19,6 +19,13 @@ body {
   margin: 168px auto auto;
 }
 
+.logo-title {
+  display: block;
+  text-align: center;
+  color: var(--main-color);
+  font-size: 24px;
+}
+
 .header-content {
   width: 90%;
   margin: auto;

@@ -197,6 +197,7 @@ class App extends React.Component {
       <div className="App">
         <div className="header">
           <div className="header-content">
+            <h1 className='logo-title'>TODO</h1>
             <div className="navbar">
               <ul className="nav">
                 {this.state.nav.map((value, index) => (
